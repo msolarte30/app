@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Producto</title>
+</head>
+<body>
+    <h1>Registrar nuevo producto</h1>
+    <form action="/registrar-producto" method="POST">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Precio:</label><br>
+        <input type="number" name="precio" step="0.01" required><br><br>
+
+        <label>Cantidad:</label><br>
+        <input type="number" name="cantidad" required><br><br>
+
+        <label>Categoría (ID):</label><br>
+        <input type="number" name="categoria_id" required><br><br>
+
+        <input type="submit" value="Registrar">
+    </form><br><br>
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
