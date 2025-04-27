@@ -6,5 +6,5 @@ services:
   repo: https://github.com/msolarte30/app
   branch: master
   buildCommand: pip install -r requirements.txt
-  staticPublishPath: build
+  staticPublishPath: gunicorn app:app
 version: "1"
