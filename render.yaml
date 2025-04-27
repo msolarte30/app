@@ -1,0 +1,10 @@
+# Exported from Render on 2025-04-27T22:33:14Z
+services:
+- type: web
+  name: app
+  runtime: static
+  repo: https://github.com/msolarte30/app
+  branch: master
+  buildCommand: pip install -r requirements.txt
+  staticPublishPath: build
+version: "1"
