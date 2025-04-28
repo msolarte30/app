@@ -1,3 +1,6 @@
 Flask==3.0.0
 gunicorn==21.2.0
 psycopg2-binary==2.9.9  # ¡Versión precompilada, sin dependencias del sistema!
+gunicorn app:app                         # Estructura plana
+gunicorn src.app:app --pythonpath src    # Estructura modular
+gunicorn "app:create_app()"              # Factory pattern
